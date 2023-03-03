@@ -2,7 +2,7 @@
  * ref_1) https://stackoverflow.com/questions/9510932/java-package-vs-folder-structure-what-is-the-difference
  * ref_2) https://soshace.com/organize-your-java-code-using-packages/
  */
-package lecture_20230303;
+package lecture_230303;
 
 public class Problem_1 {
     public static void main(String[] args){

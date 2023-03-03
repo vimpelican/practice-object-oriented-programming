@@ -1,4 +1,4 @@
-package lecture_20230303;
+package lecture_230303;
 
 public class ComputeArea {
     /* Main methon */

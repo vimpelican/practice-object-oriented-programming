@@ -2,7 +2,7 @@
 중복 답안 인정(0을 자릿수로 봐서 104의 출력값이 0이 나오도록 할지,
 아니면 0을 자릿수로 판단하지 않고 4로 출력할지
 */
-package lecture_20230303;
+package lecture_230303;
 
 public class Problem_2 {
     public static void main(String[] args){
