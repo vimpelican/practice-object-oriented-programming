@@ -1,9 +1,8 @@
 package lecture_230407;
 
-/*
-import java.util.List;
+// 결과 배열의 null 값을 제거하기 위함
 import java.util.ArrayList;
-*/
+
 
 public class Problem_3 {
     public static void main(String[] args) {
@@ -58,7 +57,8 @@ public class Problem_3 {
                 temp.delete(0, temp.length());
             }
         }
-        return result;
+        // 결과 출력에 null이 나오지 않도록 제거
+        return removeNull(result);
     }
 
     public static boolean isRegex(char ch, String regex) {
@@ -68,4 +68,13 @@ public class Problem_3 {
         }
         return false;
     }
+
+    // ref) https://stackoverflow.com/questions/7230315/how-to-remove-null-from-an-array-in-java
+    public static String[] removeNull(String[] a) {
+        ArrayList<String> removedNull = new ArrayList<String>();
+        for (String str : a)
+           if (str != null)
+              removedNull.add(str);
+        return removedNull.toArray(new String[0]);
+     }
 }
